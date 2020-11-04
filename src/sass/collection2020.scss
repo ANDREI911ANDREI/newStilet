@@ -1,12 +1,7 @@
 body{
 	background: url(../img/bg_coll2020/KtkmHYGL-1M.jpg) center (center/cover)no-repeat;
-	width: 1800px;
+	max-width: 1800px;
 	min-height: 860px;
-	img{
-		
-		width: 100%;
-		height: 100%;
-	}
 	.navbar{
 		padding-top: 50px;
 		width: 100%;
@@ -31,7 +26,7 @@ body{
 					font-size: 15px;
 					letter-spacing: 6px;
 					transition: 1s all;
-					text-shadow: 3px 5px 6px  rgba( 251, 251, 251, 1);
+					text-shadow: 3px 10px 6px  rgba( 251, 251, 251, 1);
 				}
 			}
 		}
