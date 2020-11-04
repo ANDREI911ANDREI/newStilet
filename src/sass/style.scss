@@ -1,0 +1,20 @@
+@import"../sass/fonts";
+@import"../sass/promo";
+@import"../sass/footer";
+@import"../sass/collection2019.scss";
+@import"../sass/collection2020.scss";
+@import"../sass/contacts.scss";
+@import"../sass/cooperation.scss";
+@import"../sass/mans.scss";
+@import"../sass/womans.scss";
+
+body{
+    width: 1820px;
+    height: 920px;
+    background: url(../img/bg_promo/zhZXV4eGLhI.jpg) center (center/cover) no-repeat;
+}
+.promo{
+    .container{
+        max-width: 800px;
+    }
+}
