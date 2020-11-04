@@ -2,6 +2,84 @@ body{
 	background: url(../img/bg_man/vlP2alZY4Ko.jpg) center (center/cover)no-repeat;
 	max-width: 1800px;
 	min-height: 860px;
+	.container{
+		padding-right: 150px;
+		.tabs{
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			.tab{
+				box-shadow: 20px 20px 20px rgba(0,0,0, .7);
+				margin-top: 75px;
+				background-color: rgba(0,0,0, .6);	
+				border: 0,5px solid rgba(0,0,0, .8);
+				border-radius: 10px;
+				text-align: center;
+				width: 250px;
+				height: 450px;
+				&:hover{
+					width: 350px;
+					height: 650px;
+					transition: 1s all;
+					img{
+						width: 300px;
+						height: 500px;
+						transition: 1s all;
+					}
+					&_btn{
+					font-family: 'PT Serif', serif;
+					margin-top: 25px;
+					width: 90%;
+					background-color: rgba(0,0,0, .2);
+					text-transform: uppercase;
+					border:none;
+
+					}
+				}
+				.title{
+					padding-top: 10px;
+					font-family: 'PT Serif', serif;
+					letter-spacing: 2px;
+					color: white;
+					text-transform: uppercase;
+				}
+				&_descr{
+					font-family: 'PT Serif', serif;
+					letter-spacing: 2px;
+					color: white;
+					font-size: 15px;
+				}
+				&_prices{
+					font-family: 'Architects Daughter', cursive;
+					letter-spacing: 4px;
+					color: #ffffff;
+					font-size: 20px;
+				}
+				&_img{
+					
+					img{
+						cursor: pointer;
+						width: 200px;
+						height: 300px;
+					}
+					
+				}
+				&_btn{
+					font-family: 'PT Serif', serif;
+					margin-top: 25px;
+					width: 90%;
+					background-color: rgba(251,251,251, .8);
+					text-transform: uppercase;
+					border:none;
+					&:hover{
+						border:none;
+						background-color: rgba(251,251,251, .2);
+
+					}
+				}
+			}
+		}
+	}
 	.navbar{
 		padding-top: 50px;
 		width: 100%;
@@ -15,8 +93,10 @@ body{
 			justify-content: space-around;
 			text-transform: uppercase;
 			li{
-				
 				list-style-type: none;
+				&:active{
+					font-size: 20px;
+				}
 			}
 			a{
 				color: #000000;

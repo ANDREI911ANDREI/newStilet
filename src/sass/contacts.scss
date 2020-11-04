@@ -1,8 +1,30 @@
 body{
 	background: url(../img/bg_promo/i-wEjb-mHpg.jpg) center (center/cover)no-repeat;
-	max-width: 1800px;
+	max-width: 1880px;
 	min-height: 860px;
-	.navbar{
+	.promo{
+		display: block;
+		margin: 0 auto;
+		.container{
+			display: block;
+			margin: 0 auto;
+			.contacts{
+				padding: 20px 40px;
+				text-align: center;
+				transform: translateY(25%);
+				display: block;
+				margin: 0 auto;
+				width: 80%;
+				height: 500px;
+				background-color: rgba(0,0,0, .6);
+				font-family: 'PT Serif', serif;
+				font-size: 25px;
+				color: white;
+				border-radius: 8px;
+				text-transform: uppercase;
+			}
+		}
+		.navbar{
 		padding-top: 50px;
 		width: 100%;
 		font-size: 14px;
@@ -31,4 +53,5 @@ body{
 			}
 		}
 	}
+}
 }

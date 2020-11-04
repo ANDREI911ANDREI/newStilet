@@ -1,38 +1,7 @@
 body{
 	padding-left: 50px;
 	max-width: 1800px;
-	min-height: 860px;
-	.promo{
-		.navbar{
-		padding-top: 50px;
-		width: 100%;
-		font-size: 14px;
-		letter-spacing: 2px;
-		font-family: 'PT Serif', serif;
-		text-transform: uppercase;
-		font-weight: 700;
-		&__menu{
-			display: flex;
-			justify-content: space-around;
-			text-transform: uppercase;
-			li{
-				
-				list-style-type: none;
-			}
-			a{
-				color: #ffffff;
-				text-decoration: none;
-				cursor: pointer;
-				&:hover{
-					font-size: 15px;
-					letter-spacing: 5px;
-					transition: 1s all;
-					text-shadow: 3px 10px 6px  rgba( 251, 251, 251, 1);
-				}
-			}
-		}
-		
-	}
+	min-height: 860px;	
 	.logo{
 		text-align: center;
 		display: block;
@@ -77,6 +46,4 @@ body{
 		}
 
 	}
-	}
-
 }
