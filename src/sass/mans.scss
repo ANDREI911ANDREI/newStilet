@@ -2,111 +2,167 @@ body{
 	background: url(../img/bg_man/vlP2alZY4Ko.jpg) center (center/cover)no-repeat;
 	max-width: 1800px;
 	min-height: 860px;
-	.container{
-		padding-right: 150px;
-		.tabs{
-			display: flex;
-			justify-content: space-between;
-			flex-wrap: wrap;
-			.tab{
-				box-shadow: 20px 20px 20px rgba(0,0,0, .7);
-				margin-top: 75px;
-				background-color: rgba(0,0,0, .6);	
-				border: 0,5px solid rgba(0,0,0, .8);
-				border-radius: 10px;
-				text-align: center;
-				width: 250px;
-				height: 450px;
-				&:hover{
-					width: 350px;
-					height: 650px;
-					transition: 1s all;
-					img{
-						width: 300px;
-						height: 500px;
-						transition: 1s all;
-					}
-					&_btn{
-					font-family: 'PT Serif', serif;
-					margin-top: 25px;
-					width: 90%;
-					background-color: rgba(0,0,0, .2);
-					text-transform: uppercase;
-					border:none;
-
+	.promo{
+		.navbar{
+			padding-top: 50px;
+			width: 100%;
+			font-size: 14px;
+			letter-spacing: 2px;
+			font-family: 'PT Serif', serif;
+			text-transform: uppercase;
+			font-weight: 700;
+			&__menu{
+				display: flex;
+				justify-content: space-around;
+				text-transform: uppercase;
+				.item{
+					list-style-type: none;
+					&_active{
+						font-size: 20px;
+						list-style-type: none; 
+						letter-spacing: 8px;
+						vertical-align: top;
 					}
 				}
-				.title{
-					padding-top: 10px;
-					font-family: 'PT Serif', serif;
-					letter-spacing: 2px;
-					color: white;
-					text-transform: uppercase;
-				}
-				&_descr{
-					font-family: 'PT Serif', serif;
-					letter-spacing: 2px;
-					color: white;
-					font-size: 15px;
-				}
-				&_prices{
-					font-family: 'Architects Daughter', cursive;
-					letter-spacing: 4px;
-					color: #ffffff;
-					font-size: 20px;
-				}
-				&_img{
-					
-					img{
-						cursor: pointer;
-						width: 200px;
-						height: 300px;
-					}
-					
-				}
-				&_btn{
-					font-family: 'PT Serif', serif;
-					margin-top: 25px;
-					width: 90%;
-					background-color: rgba(251,251,251, .8);
-					text-transform: uppercase;
-					border:none;
+					a{
+					color: #000000;
+					text-decoration: none;
+					cursor: pointer;
 					&:hover{
-						border:none;
-						background-color: rgba(251,251,251, .2);
-
+						font-size: 15px;
+						letter-spacing: 6px;
+						transition: 1s all;
+						text-shadow: 3px 10px 6px  rgba( 0, 0, 0, 1);
 					}
 				}
 			}
 		}
 	}
-	.navbar{
-		padding-top: 50px;
-		width: 100%;
-		font-size: 14px;
-		letter-spacing: 2px;
-		font-family: 'PT Serif', serif;
-		text-transform: uppercase;
-		font-weight: 700;
-		&__menu{
-			display: flex;
-			justify-content: space-around;
+	.catalog{
+		padding-top: 75px;
+		h2.title{
+			font-size: 50px;
 			text-transform: uppercase;
-			li{
-				list-style-type: none;
-				&:active{
-					font-size: 20px;
+			font-family: 'PT Serif', serif;
+		}
+		.container{
+			text-align: center;
+			.catalog__tabs{
+				width: 100%;
+				padding-right: 20px;
+				display: flex;
+				justify-content: space-between;
+				padding-top: 50px;
+				.catalog__tab{
+					padding-top: 15px;
+					font-family: 'PT Serif', serif;
+					border: none;
+					list-style: none;
+					line-height: 40px;
+					letter-spacing: 4px;
+					font-size: 16px;
+					color: white;
+					text-align: center;
+					margin-right: 10px;
+					width: 350px;
+					height: 90px;
+					background-color: rgba(0,0,0,.2);
+					text-transform: uppercase;
+					&:hover{
+						box-shadow: 5px 10px 5px  rgba(0,0,0,.5);
+						transition: 0,5s all;
+						cursor: pointer;
+						text-shadow: 5px 5px 5px  rgba(0,0,0,.5);
+					}
+					&_active{
+						background-color: rgba(0,0,0,.7);
+						color: white;
+						text-align: center;
+						transition: 0,5s all;
+						font-size: 16px;
+					}
 				}
 			}
-			a{
-				color: #000000;
-				text-decoration: none;
-				cursor: pointer;
-				&:hover{
-					font-size: 15px;
-					letter-spacing: 6px;
-					transition: 1s all;
-					text-shadow: 3px 10px 6px  rgba( 0, 0, 0, 1);
+			.catalog__content{
+				display: none;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				&_active{
+					display: block;
+					display: flex;
+				}
+				.catalog__item{
+					box-shadow: 20px 20px 20px rgba(0,0,0, .7);
+					margin-top: 75px;
+					background-color: rgba(0,0,0, .6);	
+					border: 0,5px solid rgba(0,0,0, .8);
+					border-radius: 10px;
+					text-align: center;
+					width: 250px;
+					height: 450px;
+					&:hover{
+						width: 350px;
+						height: 650px;
+						transition: 1s all;
+						.tab_img{
+							img{
+								width: 300px;
+								height: 500px;
+								transition: 1s all;
+							}
+						}
+						.tab_btn{
+						font-family: 'PT Serif', serif;
+						margin-top: 25px;
+						width: 90%;
+						background-color: rgba(0,0,0, .2);
+						text-transform: uppercase;
+						border:none;
+						color: white;
+	
+						}
+					}
+					.title{
+						padding-top: 10px;
+						font-family: 'PT Serif', serif;
+						letter-spacing: 2px;
+						color: white;
+						text-transform: uppercase;
+					}
+					.tab_descr{
+						font-family: 'PT Serif', serif;
+						letter-spacing: 2px;
+						color: white;
+						font-size: 15px;
+					}
+					.tab_prices{
+						font-family: 'Architects Daughter', cursive;
+						letter-spacing: 4px;
+						color: #ffffff;
+						font-size: 20px;
+					}
+					.tab_img{
+						
+						img{
+							cursor: pointer;
+							width: 200px;
+							height: 300px;
+						}
+						
+					}
+					.tab_btn{
+						font-family: 'PT Serif', serif;
+						margin-top: 25px;
+						width: 90%;
+						background-color: rgba(251,251,251, .8);
+						text-transform: uppercase;
+						border:none;
+						&:hover{
+							border:none;
+							background-color: rgba(251,251,251, .2);
+	
+						}
+					}
 				}
 			}
 		}

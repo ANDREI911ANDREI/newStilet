@@ -92,9 +92,14 @@ body{
 			display: flex;
 			justify-content: space-around;
 			text-transform: uppercase;
-			li{
-				
+			.item{
 				list-style-type: none;
+				&_active{
+					font-size: 20px;
+					list-style-type: none; 
+					letter-spacing: 8px;
+					vertical-align: top;
+				}
 			}
 			a{
 				color: #000000;

@@ -2,17 +2,15 @@ footer{
 	.footer{
 		width: 100%;
 		.container{
+			text-align: center;
+			position: relative;
 			display: flex;
 			justify-content: center;
-			position: relative;
 			.social_hub{
-				padding-left: 50px;
-				max-width:450px ;
+				margin-left:200px;
 				display: flex;
-				flex-direction: center;
-				justify-content: space-between;
-				position: absolute;
-				margin: 0 auto;
+				justify-content: center;
+				width:50%;
 				transform: translateY(250%);
 				a{
 					img{
