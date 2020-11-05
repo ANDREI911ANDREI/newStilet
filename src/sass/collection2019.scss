@@ -113,9 +113,14 @@ body{
 			display: flex;
 			justify-content: space-around;
 			text-transform: uppercase;
-			li{
+			.item{
 				
 				list-style-type: none;
+				&_active{
+					list-style-type:none;
+					font-size: 20px;
+					letter-spacing: 6px;
+				}
 			}
 			a{
 				color: #000000;

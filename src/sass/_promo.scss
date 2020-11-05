@@ -3,11 +3,11 @@ body{
 	min-height: 860px;
 	.promo{
 		.container{
-			padding-right: 0px;
+			padding-left: 150px;
 			.logo{
 				text-align: center;
-				display: block;
-				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;		
 				
 				a{
 					text-shadow: 5px 5px 5px rgba(0,0,0, .8);
