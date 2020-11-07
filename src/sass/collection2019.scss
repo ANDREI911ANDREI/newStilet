@@ -101,38 +101,48 @@ body{
 	  }
 	
 
+	.promo{
+	width: 100%;
 	.navbar{
+		
 		padding-top: 50px;
 		width: 100%;
 		font-size: 14px;
 		letter-spacing: 2px;
 		font-family: 'PT Serif', serif;
 		text-transform: uppercase;
-		font-weight: 700;
+		font-weight: 400;
 		&__menu{
+			padding: 0 0 0 0;
 			display: flex;
 			justify-content: space-around;
 			text-transform: uppercase;
 			.item{
-				
+				width: 150px;
 				list-style-type: none;
+				text-align: center;
 				&_active{
+					text-align: center;
 					list-style-type:none;
-					font-size: 20px;
-					letter-spacing: 6px;
+					font-size: 13px;
+					letter-spacing: 2px;
+					text-shadow: 5px 5px 5px  rgba( 0, 0, 0, 1);
+					transition: 1s all;
+					
 				}
 			}
 			a{
-				color: #000000;
+				color: #ffffff;
 				text-decoration: none;
 				cursor: pointer;
 				&:hover{
-					font-size: 15px;
-					letter-spacing: 6px;
+					font-size: 14px;
+					letter-spacing: 3px;
 					transition: 1s all;
-					text-shadow: 3px 10px 6px  rgba( 0, 0, 0, 1);
+					text-shadow: 5px 10px 6px  rgba( 0, 0, 0, .6);
 				}
 			}
 		}
+	}
 	}
 }
