@@ -445,5 +445,16 @@ body{
 @media(max-width:768px){
 }
 @media(max-width:576px){
+body{
+	.promo{
+		.slideshow-container{
+			.text{
+				transform:translateY(200%);
+			}
+		}
+	}
+	.hamburger{
+	}
+}
 }
 			
